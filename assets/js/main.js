@@ -39,6 +39,7 @@ window.BADApp = (function () {
       '<article class="product-card" data-id="' + p.id + '" data-category="' + p.category + '" tabindex="0">' +
         '<div class="product-card__media">' +
           '<span class="product-card__badge">-' + p.discountPercent + '%</span>' +
+          '<button type="button" class="product-card__wishlist" aria-label="Sevimlilarga qo\'shish">&#9825;</button>' +
           '<img src="' + p.image + '" alt="' + p.name + '" loading="lazy">' +
         '</div>' +
         '<div class="product-card__body">' +
@@ -195,6 +196,13 @@ window.BADApp = (function () {
 
   function initProductClicks(root) {
     (root || document).addEventListener("click", function (e) {
+      var wishlist = e.target.closest(".product-card__wishlist");
+      if (wishlist) {
+        e.stopPropagation();
+        wishlist.classList.toggle("is-saved");
+        wishlist.innerHTML = wishlist.classList.contains("is-saved") ? "&#9829;" : "&#9825;";
+        return;
+      }
       var card = e.target.closest(".product-card");
       if (card) openProductModal(card.getAttribute("data-id"));
     });
