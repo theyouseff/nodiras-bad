@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420">
+  <defs>
+    <linearGradient id="bodyH" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F3EDE6"/>
+    </linearGradient>
+    <linearGradient id="capH" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C24A6B"/>
+      <stop offset="100%" stop-color="#8A1B3D"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="210" cy="372" rx="120" ry="18" fill="#241417" opacity="0.08"/>
+
+  <!-- bottle -->
+  <rect x="118" y="160" width="184" height="196" rx="24" fill="url(#bodyH)" stroke="#E4D6C8" stroke-width="2.5"/>
+  <rect x="140" y="198" width="140" height="120" rx="8" fill="#FDFBF9" stroke="#9C1F45" stroke-width="2.5"/>
+  <text x="210" y="238" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#9C1F45" letter-spacing="1.5">NODIRA'S</text>
+  <text x="210" y="264" text-anchor="middle" font-family="Georgia, serif" font-size="21" font-weight="700" fill="#241417" letter-spacing="2">BAD</text>
+  <line x1="160" y1="280" x2="260" y2="280" stroke="#E7C77A" stroke-width="2"/>
+  <text x="210" y="302" text-anchor="middle" font-family="Karla, sans-serif" font-size="11" fill="#6B5A5E" letter-spacing="1">PREMIUM QUALITY</text>
+
+  <rect x="132" y="122" width="156" height="46" rx="12" fill="url(#capH)"/>
+  <rect x="152" y="90" width="116" height="40" rx="10" fill="#6E1533"/>
+  <rect x="152" y="90" width="116" height="10" rx="5" fill="#241417" opacity="0.15"/>
+
+  <!-- floating softgels -->
+  <g transform="translate(72,150) rotate(-18)">
+    <ellipse rx="20" ry="11" fill="#E7C77A"/>
+    <ellipse rx="20" ry="11" fill="none" stroke="#C99A3D" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(350,190) rotate(24)">
+    <ellipse rx="22" ry="12" fill="#E9AFC2"/>
+    <ellipse rx="22" ry="12" fill="none" stroke="#9C1F45" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(340,320) rotate(-10)">
+    <ellipse rx="16" ry="9" fill="#B9D6C2"/>
+    <ellipse rx="16" ry="9" fill="none" stroke="#5E8C6F" stroke-width="1.5"/>
+  </g>
+
+  <!-- leaf sprig accent -->
+  <g transform="translate(96,300)">
+    <path d="M0 0 C -18 -10 -30 -34 -18 -58 C -2 -40 4 -16 0 0 Z" fill="#B9D6C2"/>
+    <path d="M0 0 C -8 -14 -12 -32 -6 -50" stroke="#5E8C6F" stroke-width="1.2" fill="none"/>
+  </g>
+</svg>

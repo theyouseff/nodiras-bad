@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <defs>
+    <linearGradient id="bodyV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F3EDE6"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="160" cy="284" rx="86" ry="14" fill="#241417" opacity="0.08"/>
+  <rect x="86" y="118" width="148" height="150" rx="18" fill="url(#bodyV)" stroke="#E4D6C8" stroke-width="2"/>
+  <rect x="86" y="118" width="148" height="150" rx="18" fill="none" stroke="#241417" stroke-opacity="0.06" stroke-width="1"/>
+  <rect x="100" y="150" width="120" height="92" rx="6" fill="#FDFBF9" stroke="#E7C77A" stroke-width="2"/>
+  <text x="160" y="182" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#9C1F45" letter-spacing="1">NODIRA'S</text>
+  <text x="160" y="200" text-anchor="middle" font-family="Georgia, serif" font-size="15" font-weight="700" fill="#241417" letter-spacing="1.5">BAD</text>
+  <line x1="118" y1="212" x2="202" y2="212" stroke="#E7C77A" stroke-width="1.5"/>
+  <g transform="translate(160,228)">
+    <circle r="9" fill="#E7C77A" opacity="0.9"/>
+    <path d="M0 -6 L2.2 -1.8 L7 -1 L3.5 2.2 L4.4 7 L0 4.6 L-4.4 7 L-3.5 2.2 L-7 -1 L-2.2 -1.8 Z" fill="#FDFBF9"/>
+  </g>
+  <rect x="106" y="88" width="108" height="36" rx="10" fill="#E7C77A"/>
+  <rect x="118" y="66" width="84" height="30" rx="8" fill="#D9AE4E"/>
+  <rect x="118" y="66" width="84" height="8" rx="4" fill="#241417" opacity="0.12"/>
+</svg>

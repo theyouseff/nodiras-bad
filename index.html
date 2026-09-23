@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nodira's BAD — Tabiiy vitamin va BAD mahsulotlari</title>
+<meta name="description" content="Nodira's BAD — yuqori sifatli vitaminlar, minerallar va immunitetni qo'llab-quvvatlovchi BAD mahsulotlari. Tabiiy, xavfsiz va ishonchli.">
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Karla:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="topbar">Barcha mahsulotlar sifat nazoratidan o'tgan — <strong>100% tabiiy tarkib</strong></div>
+  <nav class="navbar container">
+    <a href="index.html" class="logo">Nodira's <span>BAD</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="is-active">Bosh sahifa</a></li>
+      <li class="has-dropdown">
+        <a href="products.html">Mahsulotlar</a>
+        <ul class="dropdown">
+          <li><a href="products.html">Barcha mahsulotlar</a></li>
+          <li><a href="products.html?category=vitaminlar">Vitaminlar</a></li>
+          <li><a href="products.html?category=minerallar">Minerallar</a></li>
+          <li><a href="products.html?category=immunitet">Immunitet va Energiya</a></li>
+        </ul>
+      </li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="about.html">Biz haqimizda</a></li>
+      <li><a href="where-to-buy.html">Qayerdan sotib olish</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="where-to-buy.html" class="btn btn-primary btn-sm">Qayerdan sotib olish</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menyuni ochish"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<div class="mobile-nav">
+  <button class="mobile-nav-close" aria-label="Yopish">&#10005;</button>
+  <a href="index.html">Bosh sahifa</a>
+  <a href="products.html">Mahsulotlar</a>
+  <div class="sub">
+    <a href="products.html?category=vitaminlar">Vitaminlar</a>
+    <a href="products.html?category=minerallar">Minerallar</a>
+    <a href="products.html?category=immunitet">Immunitet va Energiya</a>
+  </div>
+  <a href="faq.html">FAQ</a>
+  <a href="about.html">Biz haqimizda</a>
+  <a href="where-to-buy.html">Qayerdan sotib olish</a>
+  <div class="mobile-actions"><a href="where-to-buy.html" class="btn btn-primary btn-block">Qayerdan sotib olish</a></div>
+</div>
+
+<main>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow">Nodira's BAD &middot; Wellness Kolleksiyasi</span>
+        <h1>Har kuningizga <em>tabiiy</em> quvvat va salomatlik</h1>
+        <p>Vitaminlar, minerallar va immunitetni qo'llab-quvvatlovchi BAD mahsulotlari — laboratoriya sinovlaridan o'tgan, sifat kafolatlangan formulalar.</p>
+        <div class="hero-actions">
+          <a href="products.html" class="btn btn-primary">Mahsulotlarni ko'rish</a>
+          <a href="about.html" class="btn btn-outline">Biz haqimizda</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>36+</strong><span>mahsulot turi</span></div>
+          <div><strong>4.6</strong><span>o'rtacha reyting</span></div>
+          <div><strong>100%</strong><span>tabiiy tarkib</span></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="ring"></div>
+        <img src="assets/images/hero-bottle.svg" alt="Nodira's BAD mahsulot idishi">
+        <div class="hero-badge"><span class="dot"></span> Sifat sertifikatlangan</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="categories">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Kategoriya bo'yicha xarid qiling</span>
+        <h2>Sizga mos BAD'ni toping</h2>
+        <p>Har bir kategoriyada ehtiyotkorlik bilan tanlangan mahsulotlar — kundalik ratsioningizni to'ldirish uchun.</p>
+      </div>
+      <div class="category-grid" id="categoryGrid"></div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="featured">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Mashhur tanlovlar</span>
+        <h2>Mijozlar sevib xarid qiladigan mahsulotlar</h2>
+        <p>Eng ko'p sotilgan va yuqori baholangan BAD mahsulotlarimiz bilan tanishing.</p>
+      </div>
+      <div class="product-grid" id="featuredGrid"></div>
+      <div style="text-align:center; margin-top:44px;">
+        <a href="products.html" class="btn btn-outline">Barcha 36 mahsulotni ko'rish</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Nega aynan Nodira's BAD</span>
+        <h2>Sifat va ishonchga qurilgan brend</h2>
+      </div>
+      <div class="values-grid">
+        <div class="value-card">
+          <span class="num">01</span>
+          <h4>Laboratoriya nazorati</h4>
+          <p>Har bir partiya tarkib va tozalik bo'yicha sinovlardan o'tadi.</p>
+        </div>
+        <div class="value-card">
+          <span class="num">02</span>
+          <h4>Tabiiy formulalar</h4>
+          <p>Ortiqcha qo'shimchalarsiz, faol tarkibiy qismlarga e'tibor qaratamiz.</p>
+        </div>
+        <div class="value-card">
+          <span class="num">03</span>
+          <h4>Mijozlar sharhlari</h4>
+          <p>Har bir mahsulot sahifasida haqiqiy mijoz sharhlarini o'qishingiz mumkin.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-band">
+        <div>
+          <h2>Qayerdan sotib olish mumkinligini bilmoqchimisiz?</h2>
+          <p>Nodira's BAD mahsulotlarini eng yaqin do'kon yoki ishonchli hamkorlarimizdan xarid qiling.</p>
+        </div>
+        <a href="where-to-buy.html" class="btn btn-outline-light">Do'konlarni ko'rish</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Nodira's <span>BAD</span></div>
+        <p>Tabiiy va yuqori sifatli BAD (biologik faol qo'shimchalar) — kundalik salomatligingiz uchun ishonchli hamroh.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Telegram">TG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Mahsulotlar</h5>
+        <ul>
+          <li><a href="products.html?category=vitaminlar">Vitaminlar</a></li>
+          <li><a href="products.html?category=minerallar">Minerallar</a></li>
+          <li><a href="products.html?category=immunitet">Immunitet va Energiya</a></li>
+          <li><a href="products.html">Barcha mahsulotlar</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Kompaniya</h5>
+        <ul>
+          <li><a href="about.html">Biz haqimizda</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="where-to-buy.html">Qayerdan sotib olish</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Kontakt</h5>
+        <ul>
+          <li>+998 90 123 45 67</li>
+          <li>info@nodirasbad.uz</li>
+          <li>Toshkent, O'zbekiston</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Nodira's BAD. Barcha huquqlar himoyalangan.</span>
+      <span>Ushbu mahsulotlar kasalliklarni davolash uchun mo'ljallanmagan. Iste'moldan oldin shifokor bilan maslahatlashing.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/products-data.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/reviews.js"></script>
+</body>
+</html>
