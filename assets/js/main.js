@@ -268,12 +268,49 @@ window.BADApp = (function () {
     }).join("");
   }
 
+  /* ---------------- Hero stat counters ---------------- */
+  function animateCounter(el) {
+    var target = parseFloat(el.getAttribute("data-count-target"));
+    var decimals = parseInt(el.getAttribute("data-count-decimals") || "0", 10);
+    var suffix = el.getAttribute("data-count-suffix") || "";
+    var duration = 3000;
+    var startTime = null;
+    function step(timestamp) {
+      if (startTime === null) startTime = timestamp;
+      var progress = Math.min((timestamp - startTime) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = (target * eased).toFixed(decimals) + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+      else el.textContent = target.toFixed(decimals) + suffix;
+    }
+    requestAnimationFrame(step);
+  }
+
+  function initStatCounters() {
+    var counters = document.querySelectorAll(".stat-num[data-count-target]");
+    if (!counters.length) return;
+    if ("IntersectionObserver" in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.4 });
+      counters.forEach(function (el) { observer.observe(el); });
+    } else {
+      counters.forEach(animateCounter);
+    }
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     initMobileNav();
     initCategoryCards();
     initFeaturedSection();
     initCatalogPage();
     buildDetailModal();
+    initStatCounters();
   });
 
   return {
