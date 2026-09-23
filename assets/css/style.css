@@ -6,9 +6,9 @@
 
 :root {
   /* --- Brand ranglari --- */
-  --color-bg: #FDFBF9;
+  --color-bg: #FFFFFF;
   --color-surface: #FFFFFF;
-  --color-surface-alt: #F6EFE9;
+  --color-surface-alt: #FFFFFF;
   --color-ink: #241417;
   --color-ink-soft: #6B5A5E;
   --color-ink-faint: #9C8C8F;
@@ -429,6 +429,7 @@ h1, h2, h3, h4 {
 .product-card__media {
   position: relative;
   background: var(--color-surface-alt);
+  border-bottom: 1px solid var(--color-border);
   padding: 34px 30px 18px;
 }
 .product-card__media img { width: 100%; height: 232px; object-fit: contain; }
@@ -583,6 +584,7 @@ h1, h2, h3, h4 {
 }
 .detail-media {
   background: var(--color-surface-alt);
+  border-right: 1px solid var(--color-border);
   border-radius: var(--radius-md) 0 0 var(--radius-md);
   display: flex;
   align-items: center;
@@ -981,7 +983,7 @@ select.field-input { appearance: none; background-image: linear-gradient(45deg, 
   .split { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .detail-grid { grid-template-columns: 1fr; }
-  .detail-media { border-radius: var(--radius-md) var(--radius-md) 0 0; }
+  .detail-media { border-radius: var(--radius-md) var(--radius-md) 0 0; border-right: none; border-bottom: 1px solid var(--color-border); }
   .detail-info { padding: 30px 26px; }
   .reviews-block { padding: 28px 26px 34px; }
 }
